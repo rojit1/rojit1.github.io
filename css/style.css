@@ -65,6 +65,10 @@
     color:blue;
 }
 
+.home-div .carousel-item img{
+    height: 100vh;
+}
+
 
 #main {
     background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
@@ -93,6 +97,9 @@
     }
     #main{
         margin-left:0px;
+    }
+    .sidebar{
+        box-shadow: 3px 3px 3px firebrick;
     }
 }
 
