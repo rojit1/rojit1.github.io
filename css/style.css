@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.sidebar {
+    height: 100%;
+    width:20%; 
+    position: fixed; 
+    z-index: 999; 
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidebar {
+    text-align: center;
+}
+.sidebar header img{
+    width:50%;
+    border-radius: 50%;
+}
+.sidebar h1{
+    font-size: 180%;
+}
+
+.openbtn{
+    position: fixed;
+    background-color: white;
+    z-index: 99;
+}
+
+/* .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+} */
+
+.sidebar ul li {
+    margin-top: 8px;
+}
+
+
+#mySidebar ul li a{
+    font-size: 130%;
+    transition: 0.3s;
+    color:rgb(49, 46, 46);
+}
+#mySidebar ul li a:hover{
+    font-size: 150%;
+    color:blue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#mySidebar .act{
+    font-size: 150%;
+    color:blue;
+}
+
+
+#main {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left:25%;
+    min-height: 100vh;
+    
+}
+
+.main .my-projects .card{
+    padding:20px;
+    border-bottom: 2px solid green;
+    box-shadow: 2px 2px 2px rgb(162, 163, 160);
+    margin-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 768px) {
+    #mySidebar{
+        width:0;
+    }
+    #main{
+        margin-left:0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .openbtn{
+        display: none;
+    }
+    #mySidebar{
+        width:20%;
+    }
+    #main{
+        margin-left:25%;
+    }
+}
+
+
