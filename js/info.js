@@ -2,7 +2,7 @@ fetch('https://api.github.com/users/rojit1')
     .then((response) => response.json())
     .then((data) => {
         git = data
-        // document.getElementById('fullname').innerHTML = git.login
+        document.getElementById('profile-image').src = git.avatar_url;
 
         return fetch('https://api.github.com/users/rojit1/repos')
     }).then((response) => response.json())

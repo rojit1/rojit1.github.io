@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .sidebar {
@@ -72,7 +72,7 @@
 
 
 #main {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: linear-gradient(-225deg, rgb(247, 244, 244) 0%, rgb(245, 255, 255) 100%);
     transition: margin-left .5s;
     margin-left:25%;
     min-height: 100vh;
@@ -81,13 +81,28 @@
 
 .main .my-projects .card{
     padding:20px;
-    border-bottom: 2px solid green;
     box-shadow: 2px 2px 2px rgb(162, 163, 160);
     margin-top: 20px;
+    border-bottom: 2px solid rgb(127, 209, 45);
 }
-.main .my-projects{
+.main .my-projects,.main .about,.main .experience,.main .education{
     padding: 20px;
+    text-align: center;
 }
+
+/* education start */
+
+#accordion .card{
+    margin-top:10px;
+    border-bottom: 2px solid rgb(127, 209, 45);
+
+}
+#accordion .card .btn-link{
+    text-decoration: none;
+}
+
+/* education end */
+
 
 @media screen and (max-height: 450px) {
 .sidebar {padding-top: 15px;}
