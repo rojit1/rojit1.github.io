@@ -5,7 +5,7 @@ function openNav() {
 
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
-        document.getElementById("mySidebar").style.width = "20%";
+        document.getElementById("mySidebar").style.width = "23%";
         document.getElementById("main").style.marginLeft = "25%";
     } else {
         document.getElementById("mySidebar").style.width = "80%";
